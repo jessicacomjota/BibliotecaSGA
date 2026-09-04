@@ -299,23 +299,15 @@ st.markdown(
 
 def mostrar_rodape():
 
+    ano_atual = datetime.now().year
+
     st.markdown(
-        """
-        <div class="rodape-final">
-
-            <div class="rodape-final-principal">
-                BIBLIOTECA SESI SÃO GONÇALO DO AMARANTE
-            </div>
-
-            <div class="rodape-final-secundario">
-                Devs Jéssica Martins - Cientista da Informação
-            </div>
-
-            <div class="rodape-final-secundario">
-                © 2026 • SESI Escola SGA/RN
-            </div>
-
-        </div>
+        f"""
+        <p class="rodape-final">
+            <strong>BIBLIOTECA SESI SÃO GONÇALO DO AMARANTE</strong><br>
+            Devs Jéssica Martins - Cientista da Informação<br>
+            © {ano_atual} • SESI Escola SGA/RN
+        </p>
         """,
         unsafe_allow_html=True
     )
@@ -1134,7 +1126,7 @@ def fazer_login():
     st.markdown(
         """
         <div class="titulo-principal">
-            🔐 LOGIN: ADMINISTRADOR
+            Área do Administrador
         </div>
 
         <div class="subtitulo">
@@ -1254,7 +1246,8 @@ def mostrar_pagina_inicial():
 
     st.markdown(
         '<div class="titulo-principal">'
-        'SISTEMA DE GESTÃO E ANÁLISE: BIBLIOTECA SESI SGA'
+        'SISTEMA DE GESTÃO E ANÁLISE <BR> '
+        'BIBLIOTECA SESI SGA'
         '</div>',
         unsafe_allow_html=True
     )
@@ -1299,7 +1292,7 @@ def mostrar_acervo_publico():
     st.markdown(
         """
         <div class="titulo-principal">
-            📚 ACERVO: CONSULTA DO CATÁLOGO
+            ACERVO BIBLIOGRÁFICO 
         </div>
         """,
         unsafe_allow_html=True
@@ -1352,7 +1345,7 @@ def mostrar_acervo_publico():
     st.markdown(
         """
         <div class="titulo-secao">
-            🔎 BUSCA: CONSULTE O ACERVO
+            FILTRAR NO ACERVO
         </div>
         """,
         unsafe_allow_html=True
@@ -1469,7 +1462,7 @@ def mostrar_acervo_publico():
     st.markdown(
         """
         <div class="subtitulo-secao">
-            📚 RESULTADO: ACERVO ENCONTRADO
+            ACERVO
         </div>
         """,
         unsafe_allow_html=True
@@ -1510,7 +1503,7 @@ def mostrar_dados_atuais():
     st.markdown(
         """
         <div class="titulo-secao">
-            DADOS ATUAIS: ANÁLISE DOS DADOS
+             ANÁLISE DOS DADOS
         </div>
         """,
         unsafe_allow_html=True
@@ -2139,7 +2132,7 @@ def mostrar_movimentacao_mensal():
     st.markdown(
         """
         <div class="titulo-secao">
-            📅 MOVIMENTAÇÃO MENSAL: ANÁLISE POR PERÍODO
+            ANÁLISE MOVIMENTAÇÃO MENSAL
         </div>
         """,
         unsafe_allow_html=True
@@ -2535,7 +2528,7 @@ def mostrar_publicacao_acervo():
     st.markdown(
         """
         <div class="titulo-secao">
-            📤 PUBLICAR ACERVO: ATUALIZAÇÃO DO CATÁLOGO
+            PUBLICAR E ATUALIZAR DO CATÁLOGO DO ACERVO
         </div>
         """,
         unsafe_allow_html=True
@@ -2667,7 +2660,8 @@ def mostrar_administracao():
     st.markdown(
         """
         <div class="titulo-principal">
-            BIBLIOTECA: SISTEMA DE GESTÃO E ANÁLISE
+            SISTEMA DE GESTÃO E ANÁLISE <BR>
+            BIBLIOTECA SESI SGA
         </div>
         """,
         unsafe_allow_html=True
